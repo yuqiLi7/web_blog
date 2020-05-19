@@ -20,7 +20,6 @@ import javax.servlet.http.HttpSession;
 @RequestMapping("/admin")
 public class LoginController {
 
-
     @Autowired
     private UserService userService;
 
@@ -36,6 +35,9 @@ public class LoginController {
                         HttpSession session,
                         RedirectAttributes attributes) {
         User user = userService.checkUser(username, password);
+        System.out.println("username = " + username);
+        System.out.println("password = " + password);
+        System.out.println("user = " + user);
         if (user != null) {
             user.setPassword(null);
             session.setAttribute("user",user);
