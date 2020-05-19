@@ -1,0 +1,1 @@
+insert into t_user (avatar, password, update_time, id, nickname, email, create_time, type, username) values ( 'https://unsplash.it/100/100?image=1005', '560560', '2020-05-19 09:36:23', '1', '管理员', 'hh@163.com', '2020-05-19 12:36:04', '1', 'admin');
