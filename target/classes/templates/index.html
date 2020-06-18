@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 引入font-awesome -->
+  <link rel="stylesheet" href="../lib/font/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css" >
+  <link rel="stylesheet" href="../css/me.css" >
+  <!-- 引入jq -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+  <title>博客入口</title>
+</head>
+<body>
+<!-- window是可视窗口 -->
+<div class="window">
+  <img src="../images/1.jpg" alt="">
+  <!-- 盛放内容 -->
+  <div class="table">
+
+    <!-- 上半部分 -->
+    <div class="bg">
+      <p1>这是时间</p1>
+      <p2>这是日期</p2>
+      <h3>B L O G</h3>
+      <!-- 官网图标 -->
+      <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
+      <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
+      <h6>点击屏幕以进入博客</h6>
+    </div>
+
+    <div class="up">
+      <i class="fa fa-angle-up fa-3x" aria-hidden="true"></i>
+      <i class="fa fa-angle-up fa-3x" aria-hidden="true"></i>
+    </div>
+
+    <!-- 下半部分 -->
+
+    <div class="container">
+      <!-- 这部分也可以用ul li来代替 -->
+      <div class="con">
+        <div class="box">
+          <div class="content">
+            <a href="./home/" class="m-item item m-mobile-hide">
+              <i class="big home icon" style="font-size: 100px;color: white"></i>
+            </a>
+          </div>
+          <p>浏览博客</p>
+        </div>
+        <div class="box">
+          <div class="content">
+            <a href="./admin/" class="m-item item m-mobile-hide">
+              <i class="big desktop icon" style="font-size: 70px;color: white"></i>
+            </a>
+          </div>
+          <p>登录后台</p>
+        </div>
+        <div class="box">
+          <div class="content">
+            <a href="https://www.whu.edu.cn" class="m-item item m-mobile-hide">
+              <i class="big linkify icon" style="font-size: 80px;color: white"></i>
+            </a>
+          </div>
+          <p>友站链接</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../css/main.js"></script>
+<!--/*/<th:block th:replace="_fragments :: script">/*/-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+<!--/*/</th:block>/*/-->
+
+<script>
+  $('.menu.toggle').click(function () {
+    $('.m-item').toggleClass('m-mobile-hide');
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://rm-wz98sj0k1997ci6v95o.mysql.rds.aliyuncs.com:3306/blog
+    username: root
+    password: Huluobowodi123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: info
+    com.whu: debug
+  file: log/blog-dev.log
+
+server:
+  port: 8080
+
+
+
