@@ -61,9 +61,6 @@
           <div class="item">
             <i class="comment outline icon m-font-size-text-mini"></i><span th:text="${blog.views}">31</span>
           </div>
-          <div class="item">
-            <div class="ui teal basic label" th:text="${blog.flag}">原创</div>
-          </div>
         </div>
       </div>
       <div class="ui attached segment">
@@ -465,8 +462,7 @@ h5,h6{font-size:1em;}
             <ui class="list">
               <li>作者：<span th:text="${blog.user.nickname}">WHU</span><a href="#" th:href="@{/about}" target="_blank">（联系作者）</a></li>
               <li>发表时间：<span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd HH:mm')}">2020-05-02 09:08</span></li>
-              <li>版权声明：自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）</li>
-              <li>公众号转载：请在文末添加作者公众号二维码</li>
+              <li>版权声明：自由转载-非商用-非衍生-保持署名</li>
             </ui>
           </div>
           <div class="five wide column">

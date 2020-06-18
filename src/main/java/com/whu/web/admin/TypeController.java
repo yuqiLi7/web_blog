@@ -1,6 +1,6 @@
 package com.whu.web.admin;
 
-import com.whu.po.Type;
+import com.whu.entity.Type;
 import com.whu.service.TypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
@@ -17,9 +17,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
 
-/**
- * Created by yuqi Li.
- */
+
 
 @Controller
 @RequestMapping("/admin")

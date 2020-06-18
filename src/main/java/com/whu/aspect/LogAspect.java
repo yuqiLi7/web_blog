@@ -11,9 +11,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Arrays;
 
-/**
- * Created by yuqi Li.
- */
+
 @Aspect
 @Component
 public class LogAspect {

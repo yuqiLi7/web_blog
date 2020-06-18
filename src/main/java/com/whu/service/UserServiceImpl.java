@@ -1,13 +1,11 @@
 package com.whu.service;
 
 import com.whu.dao.UserRepository;
-import com.whu.po.User;
+import com.whu.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- * Created by yuqi Li.
- */
+
 @Service
 public class UserServiceImpl implements UserService {
 

@@ -1,14 +1,12 @@
 package com.whu.service;
 
-import com.whu.po.Type;
+import com.whu.entity.Type;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 
-/**
- * Created by yuqi Li.
- */
+
 public interface TypeService {
 
     Type saveType(Type type);

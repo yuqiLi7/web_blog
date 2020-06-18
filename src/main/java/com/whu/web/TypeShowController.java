@@ -1,6 +1,6 @@
 package com.whu.web;
 
-import com.whu.po.Type;
+import com.whu.entity.Type;
 import com.whu.service.BlogService;
 import com.whu.service.TypeService;
 import com.whu.vo.BlogQuery;
@@ -15,9 +15,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-/**
- * Created by yuqi Li.
- */
+
 @Controller
 public class TypeShowController {
 

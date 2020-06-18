@@ -1,7 +1,7 @@
 package com.whu.web.admin;
 
-import com.whu.po.Blog;
-import com.whu.po.User;
+import com.whu.entity.Blog;
+import com.whu.entity.User;
 import com.whu.service.BlogService;
 import com.whu.service.TagService;
 import com.whu.service.TypeService;
@@ -20,9 +20,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpSession;
 
-/**
- * Created by yuqi Li.
- */
+
 @Controller
 @RequestMapping("/admin")
 public class BlogController {
@@ -106,7 +104,4 @@ public class BlogController {
         attributes.addFlashAttribute("message", "删除成功");
         return REDIRECT_LIST;
     }
-
-
-
 }

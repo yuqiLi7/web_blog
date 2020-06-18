@@ -39,7 +39,7 @@
     <div class="ui container">
       <div class="right menu">
         <a href="#" th:href="@{/admin/blogs/input}" class=" item">发布</a>
-        <a href="#" th:href="@{/admin/blogs}" class="blue active item">列表</a>
+        <a href="#" th:href="@{/admin/blogs}" class="blue active item">已有</a>
       </div>
     </div>
   </div>
@@ -47,40 +47,7 @@
   <!--中间内容-->
   <div  class="m-container-small m-padded-tb-big">
     <div class="ui container">
-      <div  class="ui secondary segment form">
-        <input type="hidden" name="page" >
-        <div class="inline fields">
-          <div class="field">
-            <input type="text" name="title" placeholder="标题">
-          </div>
-          <div class="field">
-            <div class="ui labeled action input">
-              <div class="ui type selection dropdown">
-                <input type="hidden" name="typeId">
-                <i class="dropdown icon"></i>
-                <div class="default text">分类</div>
-                <div class="menu">
-                  <div th:each="type : ${types}" class="item" data-value="1" th:data-value="${type.id}" th:text="${type.name}">错误日志</div>
-                  <!--/*-->
-                  <div class="item" data-value="2">开发者手册</div>
-                  <!--*/-->
-                </div>
-              </div>
-              <button id="clear-btn" class="ui compact button">clear</button>
-            </div>
 
-          </div>
-          <div class="field">
-            <div class="ui checkbox">
-              <input type="checkbox" id="recommend" name="recommend">
-              <label for="recommend">推荐</label>
-            </div>
-          </div>
-          <div class="field">
-            <button  type="button" id="search-btn" class="ui mini blue basic button"><i class="search icon"></i>搜索</button>
-          </div>
-        </div>
-      </div>
       <div id="table-container">
         <table th:fragment="blogList" class="ui compact blue table">
           <thead>

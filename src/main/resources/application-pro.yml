@@ -1,22 +1,17 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8&useSSL=false
-    username: root
-    password: my-new-password
+    url: jdbc:mysql://rm-wz98sj0k1997ci6v95o.mysql.rds.aliyuncs.com:3306/blog
+      username: root
+      password: Huluobowodi123
   jpa:
     hibernate:
       ddl-auto: none
     show-sql: true
+
 
 logging:
   level:
     root: warn
     com.whu: info
   file: log/blog-pro.log
-
-
-
-
-
-

@@ -1,6 +1,6 @@
 package com.whu.dao;
 
-import com.whu.po.Blog;
+import com.whu.entity.Blog;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -11,9 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-/**
- * Created by yuqi Li.
- */
+
 public interface BlogRepository extends JpaRepository<Blog, Long>, JpaSpecificationExecutor<Blog> {
 
     @Query("select b from Blog b where b.recommend = true")

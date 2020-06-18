@@ -1,7 +1,7 @@
 package com.whu.web;
 
-import com.whu.po.Comment;
-import com.whu.po.User;
+import com.whu.entity.Comment;
+import com.whu.entity.User;
 import com.whu.service.BlogService;
 import com.whu.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,9 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.servlet.http.HttpSession;
 
-/**
- * Created by yuqi Li.
- */
+
 @Controller
 public class CommentController {
 

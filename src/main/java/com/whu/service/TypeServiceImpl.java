@@ -2,7 +2,7 @@ package com.whu.service;
 
 import com.whu.NotFoundException;
 import com.whu.dao.TypeRepository;
-import com.whu.po.Type;
+import com.whu.entity.Type;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -14,9 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-/**
- * Created by yuqi Li.
- */
+
 @Service
 public class TypeServiceImpl implements TypeService {
 

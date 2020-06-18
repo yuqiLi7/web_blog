@@ -3,11 +3,8 @@ package com.whu.util;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-/**
- * Created by yuqi Li.
- */
-public class MD5Utils {
 
+public class MD5Utils {
     /**
      * MD5加密类
      * @param str 要加密的字符串
@@ -36,7 +33,6 @@ public class MD5Utils {
             e.printStackTrace();
             return null;
         }
-
     }
 
 

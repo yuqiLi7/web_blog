@@ -1,6 +1,6 @@
 package com.whu.web;
 
-import com.whu.po.Tag;
+import com.whu.entity.Tag;
 import com.whu.service.BlogService;
 import com.whu.service.TagService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,9 +14,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-/**
- * Created by yuqi Li.
- */
+
 @Controller
 public class TagShowController {
 

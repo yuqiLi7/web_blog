@@ -1,7 +1,7 @@
 package com.whu.service;
 
 import com.whu.dao.CommentRepository;
-import com.whu.po.Comment;
+import com.whu.entity.Comment;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
@@ -12,9 +12,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by yuqi Li.
- */
+
 @Service
 public class CommentServiceImpl implements CommentService {
 

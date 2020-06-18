@@ -1,8 +1,6 @@
 package com.whu.vo;
 
-/**
- * Created by yuqi Li.
- */
+
 public class BlogQuery {
 
     private String title;
@@ -36,3 +34,4 @@ public class BlogQuery {
         this.recommend = recommend;
     }
 }
+

@@ -10,7 +10,7 @@
 <body>
 
   <!--导航-->
-  <nav th:replace="_fragments :: menu(1)"  class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
+  <nav th:replace="_fragments :: menu(2)"  class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
     <div class="ui container">
       <div class="ui inverted secondary stackable menu">
         <h2 class="ui blue header item">Blog</h2>
@@ -52,30 +52,7 @@
           <a href="#" th:href="@{/types/{id}(id=${type.id})}" class="ui basic blue button" th:classappend="${type.id==activeTypeId} ? 'blue'" th:text="${type.name}">思考与感悟</a>
           <div class="ui basic blue left pointing label" th:classappend="${type.id==activeTypeId} ? 'blue'" th:text="${#arrays.length(type.blogs)}">24</div>
         </div>
-        <div class="ui labeled button m-margin-tb-tiny" th:each="type : ${types}">
-          <a href="#" th:href="@{/types/{id}(id=${type.id})}" class="ui basic button" th:classappend="${type.id==activeTypeId} ? 'blue'" th:text="${type.name}">JAVA开发</a>
-          <div class="ui basic left pointing label" th:classappend="${type.id==activeTypeId} ? 'blue'" th:text="${#arrays.length(type.blogs)}">24</div>
-        </div>
-        <div class="ui labeled button m-margin-tb-tiny" th:each="type : ${types}">
-          <a href="#" th:href="@{/types/{id}(id=${type.id})}" class="ui basic button" th:classappend="${type.id==activeTypeId} ? 'blue'" th:text="${type.name}">Web前端</a>
-          <div class="ui basic  left pointing label" th:classappend="${type.id==activeTypeId} ? 'blue'" th:text="${#arrays.length(type.blogs)}">24</div>
-        </div>
-        <div class="ui labeled button m-margin-tb-tiny" th:each="type : ${types}">
-          <a href="#" th:href="@{/types/{id}(id=${type.id})}" class="ui basic button" th:classappend="${type.id==activeTypeId} ? 'blue'" th:text="${type.name}">硬件</a>
-          <div class="ui basic  left pointing label" th:classappend="${type.id==activeTypeId} ? 'blue'" th:text="${#arrays.length(type.blogs)}">24</div>
-        </div>
-        <div class="ui labeled button m-margin-tb-tiny" th:each="type : ${types}">
-          <a href="#" th:href="@{/types/{id}(id=${type.id})}" class="ui basic button" th:classappend="${type.id==activeTypeId} ? 'blue'" th:text="${type.name}">Web后端</a>
-          <div class="ui basic  left pointing label" th:classappend="${type.id==activeTypeId} ? 'blue'" th:text="${#arrays.length(type.blogs)}">24</div>
-        </div>
-        <div class="ui labeled button m-margin-tb-tiny" th:each="type : ${types}">
-          <a href="#" th:href="@{/types/{id}(id=${type.id})}" class="ui basic button" th:classappend="${type.id==activeTypeId} ? 'blue'" th:text="${type.name}">思考与感悟</a>
-          <div class="ui basic  left pointing label" th:classappend="${type.id==activeTypeId} ? 'blue'" th:text="${#arrays.length(type.blogs)}">24</div>
-        </div>
-        <div class="ui labeled button m-margin-tb-tiny" th:each="type : ${types}">
-          <a href="#" th:href="@{/types/{id}(id=${type.id})}" class="ui basic button" th:classappend="${type.id==activeTypeId} ? 'blue'" th:text="${type.name}">思考与感悟</a>
-          <div class="ui basic  left pointing label" th:classappend="${type.id==activeTypeId} ? 'blue'" th:text="${#arrays.length(type.blogs)}">24</div>
-        </div>
+
       </div>
 
       <div class="ui top attached blue segment">

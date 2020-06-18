@@ -2,7 +2,7 @@ package com.whu.service;
 
 import com.whu.NotFoundException;
 import com.whu.dao.TagRepository;
-import com.whu.po.Tag;
+import com.whu.entity.Tag;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -15,9 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by yuqi Li.
- */
+
 @Service
 public class TagServiceImpl implements TagService {
 

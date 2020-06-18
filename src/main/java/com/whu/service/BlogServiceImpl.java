@@ -2,8 +2,8 @@ package com.whu.service;
 
 import com.whu.NotFoundException;
 import com.whu.dao.BlogRepository;
-import com.whu.po.Blog;
-import com.whu.po.Type;
+import com.whu.entity.Blog;
+import com.whu.entity.Type;
 import com.whu.util.MarkdownUtils;
 import com.whu.util.MyBeanUtils;
 import com.whu.vo.BlogQuery;
@@ -20,9 +20,7 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.criteria.*;
 import java.util.*;
 
-/**
- * Created by yuqi Li.
- */
+
 @Service
 public class BlogServiceImpl implements BlogService {
 

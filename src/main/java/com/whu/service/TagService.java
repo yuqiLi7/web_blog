@@ -1,14 +1,12 @@
 package com.whu.service;
 
-import com.whu.po.Tag;
+import com.whu.entity.Tag;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 
-/**
- * Created by yuqi Li.
- */
+
 public interface TagService {
 
     Tag saveTag(Tag type);
